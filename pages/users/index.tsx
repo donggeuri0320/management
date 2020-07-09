@@ -1,4 +1,4 @@
-import { getStaticProps } from 'next'
+import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
 import { User } from '../../interfaces'
