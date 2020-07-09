@@ -13,23 +13,19 @@ const jst = {
     height: "50px",
   },
   nav: {
-    float: "left",
     width: "200px",
     height: "800px",
     color: "white",
-    background: "#9966CC"
+    background: "#9966CC",
   },
-  selection: {
+  body: {
       width:"200px",
-      textAlign: "left",
-      float: "left",
       padding: "10px",
-      background: "green"
+      background: "green",
   },
   footer: {
     background: "#CCFF66",
     height: "100px",
-    clear: "both"
   }
 }
 
@@ -55,9 +51,9 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
         </Link><br/>
         <a href="/api/users">Users API</a>
     </nav>
-    <selection style={jst.selection}>
+    <body style={jst.body}>
     {children}
-    </selection>
+    </body>
     <footer style={jst.footer}>
       <hr />
       <span>I'm here to stay (Footer)</span>
